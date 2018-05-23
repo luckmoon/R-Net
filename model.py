@@ -2,6 +2,7 @@ import tensorflow as tf
 from func import cudnn_gru, native_gru, dot_attention, summ, dropout, ptr_net
 
 
+# 定义一个类
 class Model(object):
     def __init__(self, config, batch, word_mat=None, char_mat=None, trainable=True, opt=True):
         self.config = config
